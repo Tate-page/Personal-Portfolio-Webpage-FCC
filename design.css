@@ -1,6 +1,7 @@
 body{
-  background: black;
+  background: #242582;
 }
+/*Beginning of navbar*/
 nav{
   background-color: blue;
   position: fixed;
@@ -11,6 +12,7 @@ nav{
   justify-content: flex-end;
   align-items: center;
   height:5pc;
+  overflow: hidden;
 }
 .navbar{
   display: flex;
@@ -19,15 +21,61 @@ nav{
 }
 #nav-links{
   padding: 100px 20px;
+  overflow: hidden;
+}
+#nav-links:hover{
+  background-color:#242582;
+  overflow: hidden;
+  border:1px solid;
+  border-color: #F64C72;
 }
 .navbar a{
-  color: black;
+  color: white;
   text-decoration: none;
 }
-.navbar a:hover{
+
+#nav-links:hover > a{
+  color: #F64C72;
   font-size: 1.35pc;
+  overflow: hidden;
+
 }
+/*End of navbar*/
+/*Welcome Section*/
 #welcome-section{
   padding-top: 50px;
+  text-align: center;
+  width: 100%
+  height: 100vh;
+}
+
+#welcome-section > h1{
+  padding-top: 30vh;
+  font-size: 2.5pc;
   color:white;
 }
+#welcome-section >h2{
+  color:white;
+}
+/*End of Welcome Section*/
+/*Projects Section*/
+#projects{
+  padding-top: 50vh;
+  display: grid;
+  grid-template-columns: repeat(2, 20vh);
+  grid-gap:30px;
+  justify-content: center;
+}
+.project-tile{
+  border: 1px solid;
+  border-radius: 5px;
+  height:200px;
+  width:200px;
+  text-align: center;
+
+}
+.project-tile > h4{
+  align-items: center;
+  justify-content: center;
+}
+/*end Of projects Section*/
