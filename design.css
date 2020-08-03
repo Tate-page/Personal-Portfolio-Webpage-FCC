@@ -1,18 +1,20 @@
 body{
-  background: #242582;
+  background: white;
 }
+
 /*Beginning of navbar*/
 nav{
-  background-color: blue;
+  background-color: #000080;
   position: fixed;
-  top:0;
-  left:0;
-  right:0;
+  width:100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height:5pc;
   overflow: hidden;
+  top:0;
+  left:0;
+  right:0;
 }
 .navbar{
   display: flex;
@@ -24,58 +26,74 @@ nav{
   overflow: hidden;
 }
 #nav-links:hover{
-  background-color:#242582;
+  background-color:white;
   overflow: hidden;
-  border:1px solid;
-  border-color: #F64C72;
 }
-.navbar a{
+#nav-links > a{
+  font-family: "Abril-Fatface",Sans-serif;
   color: white;
   text-decoration: none;
 }
 
 #nav-links:hover > a{
-  color: #F64C72;
-  font-size: 1.35pc;
   overflow: hidden;
-
+  color: #000080;
 }
 /*End of navbar*/
 /*Welcome Section*/
 #welcome-section{
-  padding-top: 50px;
   text-align: center;
   width: 100%
+  padding-top: 0px;
+  margin-top: 0px;
+  display: block;
   height: 100vh;
 }
 
 #welcome-section > h1{
   padding-top: 30vh;
   font-size: 2.5pc;
-  color:white;
+  color:#000080;
 }
 #welcome-section >h2{
-  color:white;
+  color:#000080;
 }
 /*End of Welcome Section*/
 /*Projects Section*/
 #projects{
-  padding-top: 50vh;
-  display: grid;
-  grid-template-columns: repeat(2, 20vh);
-  grid-gap:30px;
+  justify-content: center;
+  display: flex;
+  flex-basis 50% 50%;
+  width:100%;
   justify-content: center;
 }
 .project-tile{
-  border: 1px solid;
-  border-radius: 5px;
-  height:200px;
-  width:200px;
-  text-align: center;
-
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
 }
 .project-tile > h4{
-  align-items: center;
+
   justify-content: center;
+}
+
+#description-image{
+  width:50%;
+  object-fit: contain;
+}
+#description{
+  text-align: center;
+  width:50%;
+  font-family: sans-serif;
+
+}
+@media only screen and (max-width: 600px) {
+  .project-tile {
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid
+  }
 }
 /*end Of projects Section*/

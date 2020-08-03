@@ -1,40 +1,56 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="stylesheet"
+          href="https://fonts.google.com/specimen/Abril+Fatface?sidebar.open=true&selection.family=Abril+Fatface">
     <link rel="stylesheet" type="text/css" href="design.css" media="screen">
     <meta charset="utf-8">
-    <title></title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
   </head>
   <body>
-    /* Start of nav*/
-    <nav>
+    <nav id="navbar">
+   <ul class="navbar">
+     <li id="nav-links"><a href="#">About Me</a></li>
+     <li id="nav-links"><a href="#">What's Happening?</a></li>
+     <li id="nav-links"><a href="#">Contact Info</a></li>
+   </ul>
+ </nav>
+ <!-- Nav Section -->
+    <nav id="navbar">
       <ul class="navbar">
         <li id="nav-links"><a href="#">About Me</a></li>
-        <li id="nav-links"><a href="#">Policies</a></li>
+        <li id="nav-links"><a href="#">What's Happening?</a></li>
         <li id="nav-links"><a href="#">Contact Info</a></li>
       </ul>
     </nav>
-    /* End of Nav */
+    <!-- End Of Nav Section -->
 
-    /*Welcome Section*/
+    <!-- Welcome Section -->
     <section id="welcome-section">
       <h1>John Doe</h1>
-      <h2>Running for Georgia's 16th district</h2>
+      <h2>Secuity Analyst</h2>
     </section>
+    <!-- End Of Welcome Section -->
+    <!-- Projects Section -->
     <section id="projects">
       <div class="project-tile" id="Health-title">
-        <h4>Health Care Prices</h4>
+        <div id="description">
+          <h4><a href="https://codepen.io/TateP/pen/OJyKQPr?editors=1100">Link to Survey Form</a></h4>
+          <p>I dont want to pay for codepen premium so this is what we get</p>
+        </div>
+        <img src="https://images.pexels.com/photos/4755027/pexels-photo-4755027.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        alt="Italian Trulli" id="description-image">
       </div>
-      <div class="project-tile" id="Crime-tile">
-        <h4>Criminal Justice</h4>
-      </div>
-      <div class="project-tile" id="corruption-tile">
-        <h4>Corruption in Politics</h4>
-      </div>
-      <div class="project-tile" id="voter-suppresion-tile">
-        <h4>Voter Protection</h4>
-      </div>
-    </section>
 
+
+
+    </section>
+<!-- End Of Projects Section -->
+<!--Contact Section-->
+  <section id="contact-section">
+    <a href="https://github.com/Tate-page" id="profile-link" target="_blank">Github</a>
+</section>
+<!--End of Contact Section-->
+  <script src="./app.js"></script>
   </body>
 </html>
